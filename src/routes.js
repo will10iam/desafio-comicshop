@@ -1,12 +1,13 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/home'
 
 
-export default function Routes() {
+export default function RoutesApp() {
     return (
 
-        <Switch>
-
-        </Switch>
+        <Routes>
+            <Route path="/" element={<Home />} />
+        </Routes>
     )
 }

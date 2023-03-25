@@ -1,7 +1,8 @@
 import React from "react";
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import marvel from '../Assets/marvel.svg'
+import marvel from '../../assets/46.svg'
+import cart from '../../assets/47.svg'
 
 
 export default function Header() {
@@ -9,7 +10,7 @@ export default function Header() {
         <>
             <HHeader>
                 <Link to="/"><img src={marvel} alt="" className='logo' /></Link>
-                <Link to="/checkout"><ion-icon name="cart-outline"></ion-icon></Link>
+                <Link to="/"><img src={cart} alt="" className='cart' /></Link>
             </HHeader>
         </>
     )
@@ -27,8 +28,14 @@ const HHeader = styled.div`
 
 
     & .logo {
-        position: absolute;
-        height: 60%;
-        top: 14;
+        width: 50%;
+        margin-left: 5em;
+    }
+        
+
+    & .cart {
+        width: 30%;
+        margin-left: 5em;
+        
     }
 `
