@@ -1,9 +1,10 @@
 import React from "react";
-import Comic from "../../components/ListComics/Comic";
+import Comic from "../../components/Header/ListComics/Comic";
 import { useComics } from "../../hooks/useComics";
-import ListComics from "../../components/ListComics";
+import ListComics from "../../components/Header/ListComics";
 import Loading from "../../components/Loading";
 import styled from "styled-components";
+import Pagination from '../../components/Pagination'
 
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
                             ))}
                         </Grid>
                     </ListComics>
+                    <Pagination page={page} handleChange={handleChange} classname="pages" />
                 </div>
             )}
         </>

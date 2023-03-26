@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import noImage from '../../../assets/noImage.gif'
+import noImage from '../../../../assets/noImage.gif'
 
 
 const Comic = (props) => {
